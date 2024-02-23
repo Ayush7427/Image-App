@@ -1,5 +1,4 @@
-// import apiKeys from "./apiKey"
-// const fetch = "https://api.unsplash.com/photos/?client_id=YOUR_ACCESS_KEY" 
+
 
 const btn = document.querySelector("form")
 const input = document.querySelector("input")
@@ -37,7 +36,7 @@ if (pageNo === 1){
     try {
     // console.log(item);
     const word = item
-    const apiKeys = "xqsfueqV7zwex4xhu1ki5am4fVSU2ZyPBG3cdj-dwLU"
+    // const apiKeys = Your API Key
     const url = `https://api.unsplash.com/search/photos?query=${word}&per_page=28&page=${pageNo}&client_id=${apiKeys}`
     const fetchData = await fetch(url)
     const dataToJson = await fetchData.json() 
